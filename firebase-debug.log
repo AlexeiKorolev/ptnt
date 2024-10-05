@@ -1,0 +1,62 @@
+[debug] [2024-10-01T00:05:50.334Z] ----------------------------------------------------------------------
+[debug] [2024-10-01T00:05:50.336Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alexe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-10-01T00:05:50.337Z] CLI Version:   13.15.0
+[debug] [2024-10-01T00:05:50.337Z] Platform:      win32
+[debug] [2024-10-01T00:05:50.337Z] Node Version:  v18.20.4
+[debug] [2024-10-01T00:05:50.338Z] Time:          Mon Sep 30 2024 20:05:50 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-10-01T00:05:50.338Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-01T00:05:50.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-01T00:05:50.348Z] > authorizing via signed-in user (alexeikorolev7@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  A:\Projects\PatentFrontend\patent
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-10-01T00:05:59.379Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-10-01T00:05:59.691Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-10-01T00:05:59.691Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ptnt-5054a (Ptnt) 
+[info] 
+=== Functions Setup
+[debug] [2024-10-01T00:06:01.686Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-01T00:06:01.686Z] > authorizing via signed-in user (alexeikorolev7@gmail.com)
+[debug] [2024-10-01T00:06:01.686Z] [iam] checking project ptnt-5054a for permissions ["firebase.projects.get"]
+[debug] [2024-10-01T00:06:01.687Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ptnt-5054a:testIamPermissions [none]
+[debug] [2024-10-01T00:06:01.687Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ptnt-5054a:testIamPermissions x-goog-quota-user=projects/ptnt-5054a
+[debug] [2024-10-01T00:06:01.687Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ptnt-5054a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-01T00:06:02.149Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ptnt-5054a:testIamPermissions 200
+[debug] [2024-10-01T00:06:02.149Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ptnt-5054a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-01T00:06:02.150Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-10-01T00:06:02.150Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ptnt-5054a
+[debug] [2024-10-01T00:06:02.151Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-10-01T00:06:02.151Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ptnt-5054a
+[debug] [2024-10-01T00:06:02.611Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/cloudfunctions.googleapis.com 200
+[debug] [2024-10-01T00:06:02.611Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-10-01T00:06:02.694Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/runtimeconfig.googleapis.com 200
+[debug] [2024-10-01T00:06:02.694Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ptnt-5054a/services/runtimeconfig.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 

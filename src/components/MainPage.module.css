@@ -1,0 +1,107 @@
+.mainPage {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .leftSection {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  
+  .addFile {
+    background-color: #f0f0f0;
+    padding: 20px;
+    padding-top: 150px;
+    border-radius: 8px;
+  }
+  
+  .generateButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .generateButton:hover {
+    background-color: #45a049;
+  }
+  
+  .middleSection {
+    width: 50%;
+    padding: 0 20px;
+  }
+  
+  .textDisplay {
+    height: 80vh;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .rightSection {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+  .chatWindow {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .chatBubble {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .user {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  .system {
+    background-color: #E5E5EA;
+    align-self: flex-start;
+  }
+  
+  .chatInput {
+    display: flex;
+  }
+  
+  .chatInput input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .chatInput button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .chatInput button:hover {
+    background-color: #0b7dda;
+  }

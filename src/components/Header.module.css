@@ -1,0 +1,107 @@
+.siteHeader {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .mainNav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .mainNav ul li {
+    margin-left: 20px;
+  }
+  
+  .mainNav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .mainNav ul li a:hover {
+    color: #007bff;
+  }
+  
+  .ctaButton .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menuToggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mainNav, .ctaButton {
+      display: none;
+    }
+  
+    .menuToggle {
+      display: block;
+    }
+  
+    .mainNav.active {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .mainNav.active ul {
+      flex-direction: column;
+    }
+  
+    .mainNav.active ul li {
+      margin: 10px 0;
+    }
+  
+    .ctaButton.active {
+      display: block;
+      margin-top: 20px;
+    }
+  }
