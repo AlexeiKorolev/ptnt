@@ -10,7 +10,7 @@ function App() {
     <Router>
     <Routes>
       <Route path="/index.html" element={<LandingPage />} />
-      <Route path="/app" element={<MainPage />} />
+      <Route path="/main" element={<MainPage />} />
     </Routes>
       <div className="App">
         <Header />
