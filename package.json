@@ -1,0 +1,22 @@
+{
+  "name": "patent_revamp",
+  "version": "1.0.0",
+  "description": "patent software revamped",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeiKorolev/ptnt.git"
+  },
+  "author": "Alexei Korolev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexeiKorolev/ptnt/issues"
+  },
+  "homepage": "https://github.com/AlexeiKorolev/ptnt#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
