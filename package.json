@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production", 
+    "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -17,7 +17,8 @@
   "dependencies": {
     "express": "^4.21.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.8",
