@@ -24,12 +24,15 @@ html, body {
 
   .title {
     position: absolute;
-    top: 40vh;
-    font-family: "Nato Sans", sans-serif
+    top: 30vh;
+    font-family: "Nato Sans", sans-serif;
+    color: white;
+    font-size: 3.5vw;
   }
   
   .get-started-btn {
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 60vh;
     font-family: "Nato Sans", sans-serif;
     background-color: white;
@@ -42,14 +45,22 @@ html, body {
     font-size: 2vw;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s, font-size 0.3s, top 0.3s;
     animation: float 3s ease-in-out infinite;
 
   }
   
   .get-started-btn:hover {
     background-color: #0056b3;
+    transform: translate(-50%, -50%);
+
     color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 2.5vw;
+    top: 58vh;
   }
 
   @keyframes float {
