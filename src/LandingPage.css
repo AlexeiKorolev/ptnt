@@ -25,11 +25,13 @@ html, body {
   .title {
     position: absolute;
     top: 40vh;
+    font-family: "Nato Sans", sans-serif
   }
   
   .get-started-btn {
     position: absolute;
     top: 60vh;
+    font-family: "Nato Sans", sans-serif;
     background-color: white;
     color: #007bff;
     border: none;
