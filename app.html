@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <meta charset="utf-8" />
+    <title>Mako</title>
+  </head>
+  <body onload="updateTabs(1);">
+    <script src="progressBar.js"></script>
+
+    <div class="tab-container">
+        <div class="tab" data-tab="1" onclick="updateTabs(1);">Enter Notes</div>
+        <div class="tab" data-tab="2" onclick="updateTabs(2);">Review Notes</div>
+        <div class="tab" data-tab="3" onclick="updateTabs(3);">Review Claims</div>
+        <div class="tab" data-tab="4" onclick="updateTabs(4);">Draft!</div>
+      </div>
+
+    <div id="screen1" class="screen1">
+        <p class="header">Paste, type, upload, or drag in your notes</p>
+
+        <div class="upload-container">
+            <input type="file" id="fileInput" multiple style="display: none;">
+            <input type="file" id="folderInput" webkitdirectory directory multiple style="display: none;">
+            <button id="selectFilesBtn">Select Files</button>
+            <button id="selectFolderBtn">Select Folder</button>
+            <button id="uploadBtn" disabled>Upload</button>
+            <div id="fileList"></div>
+          </div>
+
+        <textarea id="notes" placeholder="Write your notes here..." rows="10" cols="50"></textarea>
+        <button class="continueBtn" onclick="updateTabs(2);">Continue</button>
+    </div>
+
+    <div id="screen2">
+        <div class="sidebar">
+            <h2>Sections</h2>
+            <ul id="sectionsList">
+            </ul>
+          </div>
+
+          <textarea id="notes" placeholder="Write your notes here..." rows="10" cols="50"></textarea>
+
+        </div>
+    
+    
+
+  </body>
+</html>
