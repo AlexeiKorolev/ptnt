@@ -11,12 +11,13 @@
   </head>
   <body onload="updateTabs(1);">
     <script src="progressBar.js"></script>
+    <script src="displayClaims.js"></script>
 
     <div class="tab-container">
         <div class="tab" data-tab="1" onclick="updateTabs(1);">Enter Notes</div>
         <div class="tab" data-tab="2" onclick="updateTabs(2);">Review Notes</div>
         <div class="tab" data-tab="3" onclick="updateTabs(3);">Review Claims</div>
-        <div class="tab" data-tab="4" onclick="updateTabs(4);">Draft!</div>
+        <div class="tab" data-tab="4" onclick="updateTabs(4); showScreen(4);">Draft!</div>
       </div>
 
     <div id="screen1" class="screen1">
@@ -25,9 +26,9 @@
         <div class="upload-container">
             <input type="file" id="fileInput" multiple style="display: none;">
             <input type="file" id="folderInput" webkitdirectory directory multiple style="display: none;">
-            <button id="selectFilesBtn">Select Files</button>
-            <button id="selectFolderBtn">Select Folder</button>
-            <button id="uploadBtn" disabled>Upload</button>
+            <button id="selectFilesBtn">Upload Files</button>
+            <button id="selectFolderBtn">Upload Folder</button>
+            <button id="uploadBtn" disabled>Upload Audio</button>
             <div id="fileList"></div>
           </div>
 
@@ -36,17 +37,62 @@
     </div>
 
     <div id="screen2">
-        <div class="sidebar">
-            <h2>Sections</h2>
-            <ul id="sectionsList">
+      <div class="review-notes-container">
+        <h2>Review Notes</h2>
+        <div class="scrolling-frame">
+          <div class="question-answer">
+            <h3>Question 1: What is the capital of France?</h3>
+            <div class="answer-container">
+              <textarea class="answer-input" rows="3">The capital of France is Paris.</textarea>
+            </div>
+          </div>
+          <div class="question-answer">
+            <h3>Question 2: Who wrote "Romeo and Juliet"?</h3>
+            <div class="answer-container">
+              <textarea class="answer-input" rows="3">William Shakespeare wrote "Romeo and Juliet".</textarea>
+            </div>
+          </div>
+          <div class="section-break"></div>
+          <div class="question-answer">
+            <h3>Question 3: What is the chemical symbol for gold?</h3>
+            <div class="answer-container">
+              <textarea class="answer-input" rows="3">The chemical symbol for gold is Au.</textarea>
+            </div>
+          </div>
+          <!-- Add more question-answer pairs as needed -->
+        </div>
+      </div>
+      </div>
+
+    <div id="screen3">
+      <div id="review-claims" class="screen">
+        <h2>Review Claims</h2>
+        <div class="claims-container">
+          <div class="claims-tree">
+            <ul id="claimsTree">
+              <!-- Tree structure will be populated by JavaScript -->
             </ul>
           </div>
+          <div class="claims-list">
+            <button id="showAllClaims" class="show-all-btn">Show All Claims</button>
+            <div id="claimsList">
 
-          <textarea id="notes" placeholder="Write your notes here..." rows="10" cols="50"></textarea>
-
+              <!-- Individual claims will be populated by JavaScript -->
+            </div>
+          </div>
         </div>
+      </div>
+      </div>
     
-    
+      <div id="screen4" class="screen disabled">
+        <div class="draft-buttons">
+          <button id="downloadDraft" class="download-btn">Download Draft</button>
+          <button id="downloadInsights" class="download-btn">Download Insights</button>
+        </div>
+        <div id="pdfViewer"></div>
+      </div>
+
+
 
   </body>
 </html>

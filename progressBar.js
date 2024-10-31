@@ -137,8 +137,8 @@ function updateTabs(step) {
     }else if (step == 4) {
         screen1.classList.add("disabled");
         screen2.classList.add("disabled");
-        screen3.classList.remove("disabled");
-        screen4.classList.add("disabled");
+        screen3.classList.add("disabled");
+        screen4.classList.remove("disabled");
 
     }
 }
