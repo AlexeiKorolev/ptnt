@@ -362,4 +362,25 @@
   height: 600px;
   margin: 20px auto;
   border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #004896;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+#uploadStatus {
+  margin-top: 10px;
+  font-weight: bold;
 }/*# sourceMappingURL=app.css.map */

@@ -123,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Load PDF when screen3 is shown
   function showScreen(screenNumber) {
-    // ... (keep your existing showScreen function)
     if (screenNumber === 4) {
       loadPDF();
     }
