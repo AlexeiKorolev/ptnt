@@ -1,7 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Your existing code goes here
-    document.getElementById('selectFilesBtn').onclick = function() {
-        document.getElementById('fileInput').click();
+    document.getElementById('selectFilesBtn').onclick = async function() {
+        //document.getElementById('fileInput').click();
+        try {
+            // Add a new document to the "prompts" collection in Firestore
+            await addDoc(collection(db, 'prompts'), {
+              prompt: prompt,
+              timestamp: new Date(), // Optionally include a timestamp
+            });
+        
+            alert('Prompt added successfully!');
+            form.reset(); // Clear the form
+          } catch (error) {
+            console.error('Error adding prompt: ', error);
+            alert('Failed to add prompt. Check the console for details.');
+          }
     };
 
     document.getElementById('fileInput').onchange = function(event) {

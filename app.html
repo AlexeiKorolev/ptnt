@@ -4,17 +4,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="styling/style.css">
+    <link rel="stylesheet" type="text/css" href="styling/app.css">
     <meta charset="utf-8" />
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.17.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.17.0/firebase-firestore.js"></script>
     <title>Mako</title>
   </head>
   <body onload="updateTabs(1);">
-    <script src="progressBar.js"></script>
+    <script src="scripts/progressBar.js"></script>
     <script src="scripts/displayClaims.js"></script>
-    <script src="uploadFiles.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.17.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.17.0/firebase-firestore.js"></script>
+    <script src="scripts/uploadFiles.js"></script>
+    <script type="module" src="dist/main.js"></script>
+    
 
 
     <div class="tab-container">
